@@ -1,11 +1,11 @@
 # xmlcrudy
 
-xmlcrudy is a `/bin/sh` wrapper around XMLStarlet that provides a CRUD(+upsert) like shell interface for manipulating
-XML files.
+xmlcrudy provides a CRUD(+upsert) like shell interface for manipulating XML files as a `/bin/sh` wrapper around the 
+XMLStarlet binary.
 
-The tool was originally written as requirement to edit the XML configuration files of the OPNsense product in the 
-boot process, hence part of the requirement was to have as few dependencies as possible without the flexibility of
-having a full blown scripting language available.
+The tool was originally written as requirement to edit the XML configuration files contained within the OPNsense product 
+in the boot process of that product.  Part of the requirement was to have as few dependencies as possible without the 
+flexibility of having a full blown scripting language available - hence `/bin/sh`
 
 The tool should be useful in any situation where simple XML document manipulation is required.
 
