@@ -33,6 +33,10 @@ xmlcrudy /path/to/target.xml delete '//system/new_xpath'
 # upsert - create a value at an xpath if non-existing or update the value if the xpath does exist
 xmlcrudy /path/to/target.xml upsert '//system/another_xpath' 'a value'
 xmlcrudy /path/to/target.xml upsert '//system/another_xpath' 'a different value'
+
+# update with an advanced xpath expression
+xmlcrudy /conf/config.xml update "//gateways/gateway_item[contains(name,'public4gw')]/gateway" "10.0.0.1"
+
 ```
 
 Review `tests/tests.sh` for more examples.
